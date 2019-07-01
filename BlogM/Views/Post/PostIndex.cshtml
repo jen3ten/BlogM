@@ -1,5 +1,33 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<BlogM.Model.Post>
 @{
+    Layout = "/Views/Shared/_default.cshtml";
 }
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PostIndex</title>
+</head>
+<body>
+    <div>
+        <h2> Posts</h2>
+    </div>
+    <main>
+
+        @foreach (var item in Model)
+        {
+
+            <a href="/Post/SinglePost/@item.PostId">
+
+
+                @*<img src="~/Images/@item.ImageUrl" alt="Alternate Text" />*@
+                <h3>@item.PostTitle</h3>
+            </a>
+        }
+
+    </main>
+</body>
+</html>

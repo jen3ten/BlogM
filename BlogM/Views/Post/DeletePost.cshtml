@@ -1,0 +1,28 @@
+﻿@model BlogM.Model.Post
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "/Views/Shared/_default.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DeletePost</title>
+</head>
+<body>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Post</h4>
+        <hr />
+       
+
+        <form asp-action="DeletePost">
+            <input type="hidden" value="@ViewBag.PostId" asp-for="PostId" />
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-controller="Post" asp-action="PostIndex">Back to all Posts</a>
+        </form>
+    </div>
+</body>
+</html>

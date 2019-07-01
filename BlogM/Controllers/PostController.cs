@@ -17,14 +17,14 @@ namespace BlogM.Controllers
         }
 
         //Takes user to the AllMovies view which displays every movie. 
-        public ViewResult AllPosts()
+        public ViewResult PostIndex()
         {
             var model = postrepos.GetAll();
             return View(model);
         }
 
         //Takes user to the SingleMovie view which displays info about the movie they selected.
-        public ActionResult SinglePost(int id)
+        public ActionResult PostDetails(int id)
         {
             var model = postrepos.GetById(id);
             return View(model);

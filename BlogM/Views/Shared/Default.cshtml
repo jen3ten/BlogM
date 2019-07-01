@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+<link rel="stylesheet" type="text/css" href="~/CSS/Layout.css">
+
+<link href="https://fonts.googleapis.com/css?family=Condiment|Playfair+Display+SC|Quicksand&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Default</title>
+</head>
+<body>
+    <nav>
+        <div>
+            
+            <span>Blogs!</span>
+        </div>
+        <a class="push" href="/">Home</a>
+        <a href="/Post/"PostIndex">Posts</a>
+    </nav>
+    @RenderBody()
+    <footer> Copyright 2019</footer>
+</body>
+</html>

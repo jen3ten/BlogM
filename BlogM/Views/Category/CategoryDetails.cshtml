@@ -1,5 +1,37 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model BlogM.Model.Category
 @{
+    Layout = "/Views/Shared/_default.cshtml";
 }
+<link rel="stylesheet" type="text/css" href="~/CSS/LayOut.css">
+
+<link href="https://fonts.googleapis.com/css?family=Condiment|Playfair+Display+SC|Quicksand&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SingleCategory</title>
+</head>
+<body>
+    <section id=" home"></section>
+    <header>
+        <h1>@Model.CategoryName</h1>
+    </header>
+    <main>
+
+        @foreach (var item in Model.Posts)
+        {
+            <a href="/Post/SinglePost/@item.PostId">
+
+                <img src="~/Images/@item.ImageUrl" alt="Alternate Text" />
+                <h3>@item.PostTitle</h3>
+
+            </a>
+        }
+
+    </main>
+</body>
+</html>
+
+

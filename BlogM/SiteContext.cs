@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Blog.Model;
+using BlogM.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blog
+namespace BlogM
 {
     public class SiteContext : DbContext
     {
@@ -15,7 +15,7 @@ namespace Blog
 
               protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=SportsAndAnimalsDb;Trusted_Connection=True;";
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=PetsAndSportsDb;Trusted_Connection=True;";
 
             optionsBuilder.UseSqlServer(connectionString)
                           .UseLazyLoadingProxies();

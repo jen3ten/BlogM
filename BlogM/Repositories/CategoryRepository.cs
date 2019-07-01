@@ -1,10 +1,10 @@
 ﻿using System;
-using Blog.Model;
+using BlogM.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blog.Repositories
+namespace BlogM.Repositories
 {
     public class CategoryRepository : IRepository<Category>
     {
