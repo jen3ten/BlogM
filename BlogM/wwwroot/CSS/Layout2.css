@@ -1,0 +1,196 @@
+﻿* {
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+h1 {
+    text-shadow: 2px 2px 3px black;
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 5rem 0 0 0;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Condiment', cursive;
+}
+
+h2 {
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+    font-size: 15pt;
+    text-align: center
+}
+
+h3 {
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+    font-size: 13pt;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+    main a {
+        font-size: 2em;
+        margin: .5em 2em auto;
+        text-decoration: none;
+        display: inline-grid;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+.reviewbox {
+    justify-content: flex-start;
+}
+
+    .reviewbox div {
+        margin: 1em;
+    }
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    margin-top: .8em;
+    border-radius: 5px;
+}
+
+footer {
+    background: rgba(111, 221, 126, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: fixed;
+}
+
+p {
+    color: white;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+    nav a {
+        padding: .5em 2em;
+        padding-top: 1em;
+        color: white;
+        text-decoration: none;
+        font-family: 'Playfair Display SC', serif;
+        font-weight: bold;
+    }
+
+a h2:hover, h3:hover {
+    color: darkred;
+}
+
+nav a:hover {
+    background: #444;
+    color: darkred;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    margin: 1em;
+}
+
+nav div {
+    display: flex;
+    align-content: center;
+}
+
+    nav div span {
+        margin-left: 1em;
+        margin-top: 1em;
+        color: white;
+        font-family: 'Condiment', cursive;
+        font-size: 20px;
+    }
+
+
+form {
+    padding: 2em;
+    padding-bottom: 1em;
+}
+
+.return {
+    padding-left: 2em;
+}
+
+.control-label {
+    color: white;
+}
+
+.btn btn-default {
+    color: white;
+}
+
+div a {
+    font-size: 20px;
+}
+
+
+div .form-control {
+    width: 300px;
+    height: 200px;
+    word-wrap: normal;
+}
+
+div a:hover {
+    color: darkred;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.infobox {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 80%;
+}
+
+    .infobox p {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+.form-control {
+    color: white;
+}
+
+.btn-default {
+    color: white;
+}
+
+
