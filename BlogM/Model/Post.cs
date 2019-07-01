@@ -15,16 +15,17 @@ namespace BlogM.Model
         public string Author { get; set; }
         public DateTime PostDateTime { get; set; }
         public string CategoryName { get; set; }
+        public string TagT { get; set; }
 
 
         public virtual Category Category { get; set; }
 
-        public virtual List<TagPost> TagPosts { get; set; }
+        //public virtual List<TagPost> TagPosts { get; set; }
 
 
 
 
-        public Post(int postId, int categoryId, string postTitle, string imageUrl, string body, string author, string postDate, DateTime PostDateTime, string categoryName)
+        public Post(int postId, int categoryId, string postTitle, string imageUrl, string body, string author, string postDate, DateTime PostDateTime, string categoryName, string tagT)
         {
             PostId = postId;
             CategoryId = categoryId;
@@ -33,6 +34,7 @@ namespace BlogM.Model
             Body = body;
             Author = author;
             CategoryName = categoryName;
+            TagT = tagT;
         }
 
         public Post()

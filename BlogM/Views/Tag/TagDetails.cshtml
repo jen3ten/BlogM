@@ -1,5 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model BlogM.Model.Post
+
 @{
+    Layout = "/Views/Shared/_layout.cshtml";
 }
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TagDetails</title>
+</head>
+<body>
+    <br />
+    @*<h1>@Model.TagPosts</h1>*@
+
+    <div class="infobox">
+       
+       
+        <br />
+    </div>
+    <h2>Tags</h2>
+    <main class="tagbox">
+        
+        @*@foreach (var item in Model.TagPosts)
+        {
+            <a href="/Tag/SingleTag/@item.TagId">
+
+              
+                <p>Tags : @item.TagId</p>
+
+            </a>
+            
+        }*@
+
+    </main>
+</body>
+</html>

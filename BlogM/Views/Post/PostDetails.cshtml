@@ -24,28 +24,25 @@
         <p>@Model.Body</p>
         <br />
     </div>
-    <h2>Tags</h2>
+    <h2></h2>
     <main class="tagbox">
         <div>
             <a href="/Post/CreatePost/@Model.PostId">Create Post</a>
+                <a href="/Post/EditPost/@Model.PostId">Edit Post</a>
+                <a href="/Post/DeletePost/@Model.PostId">Delete Post</a>
             <br />
         </div>
-        @foreach (var item in Model.TagPosts)
+        @*@foreach (var item in Model.TagPosts)
         {
-            <a href="/Tag/SingleTag/@item.TagId">
+            <a href="/Tag/SingleTag/@item.TagPostId">
 
-                @*<img src="~/Images/@item.ImageUrl" alt="Alternate Text" />*@
-                <p>Tags : @item.TagId</p>
+                <img src="~/Images/@item.ImageUrl" alt="Alternate Text" />
+                <p>Tags : @Model.TagT</p>
 
             </a>
             <div>
-
-
-                <a href="/Post/EditPost/@item.PostId">Edit Post</a>
-                <a href="/Post/DeletePost/@item.PostId">Delete Post</a>
-
             </div>
-        }
+        }@*@
 
     </main>
 </body>

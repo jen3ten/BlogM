@@ -21,7 +21,7 @@ namespace BlogM
             services.AddDbContext<SiteContext>();
             services.AddScoped<IRepository<Category>, CategoryRepository>();
             services.AddScoped<IRepository<Post>, PostRepository>();
-            services.AddScoped<IRepository<Tag>, TagRepository>();
+            //services.AddScoped<IRepository<Tag>, TagRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
