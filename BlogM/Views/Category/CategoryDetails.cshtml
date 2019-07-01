@@ -22,7 +22,7 @@
 
         @foreach (var item in Model.Posts)
         {
-            <a href="/Post/SinglePost/@item.PostId">
+            <a href="/Post/PostDetails/@item.PostId">
 
                 <img src="~/Images/@item.ImageUrl" alt="Alternate Text" />
                 <h3>@item.PostTitle</h3>
