@@ -33,13 +33,13 @@ namespace BlogM.Model
             ImageUrl = imageUrl;
             Body = body;
             Author = author;
+            PostDateTime = DateTime.Now;
             CategoryName = categoryName;
             TagT = tagT;
         }
 
         public Post()
         {
-            PostDateTime = DateTime.Now;
         }
     }
 }

@@ -36,7 +36,8 @@ namespace BlogM
                    Author = "Megan Denman",
                    ImageUrl = "Horton.jpg",
                    Body = "I love cats. This is my favorite(cough) I mean, both my cats are my favorite :). Gabby is awesome too, but this pic was the first I came across of Horton, the grey kitty. (I'm lazy) Plus, he is the more gregarious one. He is obsessed with food, swatting at Gabby's tail, and cuddling up so you can't move your arm, when you have work to do. He also meows annoyedly when you sneeze.",
-                   TagT = "cute, fluffy, awesome"
+                   TagT = "cute, fluffy, awesome",
+                   PostDateTime = DateTime.Now
 
                },
                new Post
@@ -47,7 +48,8 @@ namespace BlogM
                    Author = "Megan Denman",
                    ImageUrl = "Dog.jpg",
                    Body = "I like dogs too, though I don't currently have one.  This guy looked adorable. Let's name him Toodles, for no particular reason. My grandma had a basset hound when I was younger. My grandma's house was nearby ours, so we would always visit and go for walks with Katy Rose the dog. That is the extent of what I'd like to share about how awesome dogs are!",
-                   TagT = "cute, fluffy, amazing"
+                   TagT = "cute, fluffy, amazing",
+                   PostDateTime = DateTime.Now
                },
                new Post
                {
@@ -57,7 +59,8 @@ namespace BlogM
                    Author = "Hakim Smith",
                    ImageUrl = "Basketball.jpg",
                    Body = "Basketball is one of the best sports     alive. Rather I'm playing or watching, I enjoy every aspect of it. I've been playing since before I could even remember.",
-                   TagT = "fun, sports, indoors"
+                   TagT = "fun, sports, indoors",
+                   PostDateTime = DateTime.Now
                },
                new Post
                {
@@ -67,7 +70,8 @@ namespace BlogM
                    Author = "Hakim Smith",
                    ImageUrl = "Football.jpg",
                    Body = "Football is my second favorite sport. Although it is very dangerous for those who play, it is quite entertaining. ",
-                   TagT = "fun, sports, outdoors"
+                   TagT = "fun, sports, outdoors",
+                   PostDateTime = DateTime.Now
                });
 
 
