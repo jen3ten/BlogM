@@ -6,32 +6,53 @@
 
 <link href="https://fonts.googleapis.com/css?family=Condiment|Playfair+Display+SC|Quicksand&display=swap" rel="stylesheet">
 
-<!DOCTYPE html>
-
-<html>
-<head>
+    <!DOCTYPE html>
+ <html>
+    <head>
     <meta name="viewport" content="width=device-width" />
     <title>SingleCategory</title>
-</head>
-<body>
-    <section id=" home"></section>
-    <header>
-        <h1>@Model.CategoryName</h1>
-    </header>
-    <main>
+    </head>
+    <body>
+        <section id=" home"></section>
+        <header>
+            <h1>@Model.CategoryName</h1>
+        </header>
+        <main>
 
-        @foreach (var item in Model.Posts)
-        {
+             @foreach (var item in Model.Posts)
+             {
             <a href="/Post/PostDetails/@item.PostId">
 
                 <img src="~/Images/@item.ImageUrl" alt="Alternate Text" />
                 <h3>@item.PostTitle</h3>
 
             </a>
-        }
+             }
 
-    </main>
-</body>
+            
+            <main class="postbox">
+                <div>
+                    <a href="/Post/CreatePost/@Model.CategoryId">Create Post</a>
+                    <br />
+                </div>
+
+                @foreach (var post in Model.Posts)
+                {
+                    <div>
+
+                        <p>@Model.Posts</p>
+                        <a href="/Post/EditPost/@Model.CategoryId">Edit Post</a>
+                        <a href="/Post/DeletePost/@Model.CategoryId">Delete Post</a>
+
+                    </div>
+                    <br />
+                }
+
+            </main>
+        </main>
+    </body>
+
 </html>
+
 
 

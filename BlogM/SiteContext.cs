@@ -71,7 +71,7 @@ namespace BlogM
                    ImageUrl = "Football.jpg",
                    Body = "Football is my second favorite sport. Although it is very dangerous for those who play, it is quite entertaining. ",
                    TagT = "fun, sports, outdoors",
-                   PostDateTime = DateTime.Now
+
                });
 
 

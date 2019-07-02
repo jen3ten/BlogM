@@ -14,18 +14,19 @@ h1 {
     padding: 5rem 0 0 0;
     color: white;
     margin-bottom: 20px;
-    font-family: 'Condiment', cursive;
+    font-family: 'Barriecito', cursive;
 }
 
 h2 {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 15pt;
     text-align: center
 }
 
 h3 {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Roboto', sans-serif;
+   
     color: white;
     font-size: 13pt;
     text-align: center;
@@ -58,7 +59,7 @@ main {
     }
 
 p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: medium;
 }
 
@@ -104,7 +105,7 @@ nav {
         padding-top: 1em;
         color: white;
         text-decoration: none;
-        font-family: 'Playfair Display SC', serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
 
@@ -132,7 +133,7 @@ nav div {
         margin-left: 1em;
         margin-top: 1em;
         color: white;
-        font-family: 'Condiment', cursive;
+        font-family: 'Barriecito', cursive;
         font-size: 20px;
     }
 
@@ -147,7 +148,7 @@ form {
 }
 
 .control-label {
-    color: white;
+    color: lightslategrey;
 }
 
 .btn btn-default {

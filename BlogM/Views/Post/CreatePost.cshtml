@@ -19,13 +19,30 @@
         <div class="col-md-4">
             <form asp-action="CreatePost">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Body" class="control-label"></label>
-                    <br />
-                    <textarea asp-for="Body" class="form-control">
+                     <div class="form-group">
+                    <select name="Category">
+                        <option value="pets">Pets</option>
+                        <option value="sports">Sports</option>                        
+                    </select>
+                    <div class="form-group">
+                        <select name="Tags">
+                            <option value="fluffy">Fluffy</option>
+                            <option value="fun">Fun</option>
+                            <option value="super">Super</option>
+                            <option value="nice">Nice</option>
+                        </select>
+                        <label asp-for="Author" class="control-label"></label>
+                        <br />
+                        @*<textarea asp-for="Body" class="form-control">
+                    </textarea>*@
+                        <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                        <label asp-for="Body" class="control-label"></label>
+                        <br />
+                        <textarea asp-for="Body" class="form-control">
                     </textarea>
-                    <span asp-validation-for="Body" class="text-danger"></span>
-                </div>
+                        <span asp-validation-for="Body" class="text-danger"></span>
+                    </div>
                 <div class="form-group">
                     <input asp-for="CategoryId" type="hidden" value="@ViewBag.CategoryId" class="form-control" />
                 </div>
