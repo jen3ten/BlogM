@@ -55,7 +55,7 @@ namespace BlogM.Controllers
         public ActionResult DeletePost(Post post)
         {
             postRepos.Delete(post);
-            return RedirectToAction("../Category/CategoryDetails/" + post.CategoryId);
+            return RedirectToAction("../Category/CategorySingle/" + post.Category);
         }
 
         [HttpGet]
