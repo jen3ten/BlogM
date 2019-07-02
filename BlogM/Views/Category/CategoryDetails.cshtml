@@ -23,8 +23,9 @@
              {
             <a href="/Post/PostDetails/@item.PostId">
 
-                <img src="~/Images/@item.ImageUrl" alt="Alternate Text" />
+                <img src="~/Images/@item.ImageUrl" alt="Alternate Text" /><br/>
                 <h3>@item.PostTitle</h3>
+                <br/>
 
             </a>
              }
@@ -40,7 +41,7 @@
                 {
                     <div>
 
-                        <p>@Model.Posts</p>
+                        @*<p>@Model.Posts</p>*@
                         <a href="/Post/EditPost/@Model.CategoryId">Edit Post</a>
                         <a href="/Post/DeletePost/@Model.CategoryId">Delete Post</a>
 

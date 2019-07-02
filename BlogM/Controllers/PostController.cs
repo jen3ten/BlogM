@@ -23,7 +23,7 @@ namespace BlogM.Controllers
             return View(model);
         }
 
-        //Takes user to the PostDetails view which displays info about the movie they selected.
+        //Takes user to the PostDetails view which displays info about the post they selected.
         public ActionResult PostDetails(int id)
         {
             var model = postRepos.GetById(id);
@@ -43,10 +43,7 @@ namespace BlogM.Controllers
             return RedirectToAction("../Post/PostIndex/" + post.PostId);
             
         }
-        public object PostDetails()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         [HttpGet]
         public ViewResult DeletePost(int id)
